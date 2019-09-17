@@ -1,5 +1,14 @@
-<?php get_header(); ?>
 
+<?php get_header(); ?>
+</div>
+</div>
+<?php
+if (is_front_page() || is_home()) { ?>
+    <?php get_template_part('parts/slider', 'index'); ?>
+<?php } ?>
+
+<div class="container">
+	<div class="row">
 <div class="col-sm-8 blog-main">
  
  <?php 
@@ -27,3 +36,6 @@
 <?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
+
+</body>
+</html>

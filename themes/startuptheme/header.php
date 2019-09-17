@@ -15,25 +15,24 @@
 
 <body <?php body_class(); ?>>
 
+
 <div class="blog-masthead">
-    <div class="container">
-        <nav class="blog-nav">
-            <a class="blog-nav-item active" href="#">Home</a>
-            <a class="blog-nav-item" href="#">About Us</a>
-            <a class="blog-nav-item" href="#">Classes</a>
-            <a class="blog-nav-item" href="#">JCU Classes</a>
-            <a class="blog-nav-item" href="#">News</a>
-            <a class="blog-nav-item" href="#">Events</a>
-            <a class="blog-nav-item" href="#">Contact Us</a>
-        </nav>
+    <div class="container header-menu-top">
+        <div class="col-md-3 site-logo-main" style="float: left;
+    padding-left: 0px;">
+            <?php  if ( function_exists( 'the_custom_logo' ) ) { the_custom_logo();} ?>
+        </div>
+        <div class="col-md-9 header-menu-main" style="float: left;
+    padding: 15px;
+    margin-left: 0px;">
+            <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' => 'blog-nav list-inline' ) ); ?>
+        </div>
     </div>
 </div>
 
+
+
+    
+
 <div class="container">
-
-    <div class="blog-header">
-        <h1 class="blog-title">The Bootstrap Blog</h1>
-        <p class="lead blog-description">The official example template of creating a blog with Bootstrap.</p>
-    </div>
-
     <div class="row">
